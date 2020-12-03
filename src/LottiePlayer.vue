@@ -26,7 +26,7 @@ export default {
 		src: 'render',
 		options: 'render'
 	},
-	created() {
+	mounted() {
 		this.render();
 	},
 	methods: {
@@ -44,7 +44,10 @@ export default {
 				});
 			}
 			this.player.src = this.src;
-			this.$refs.LottiePlayer.appendChild(this.player);
+			try {
+				this.$refs.LottiePlayer.appendChild(this.player);
+			} catch (ex) {
+			}
 		}
 	}
 };
