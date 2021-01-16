@@ -1,5 +1,5 @@
 {
-	"name": "lottie-player-vue",
+	"name": "am05mhz-lottie-player-vue",
 	"version": "0.0.16",
 	"description": "LottieFiles animations, in Vue!",
 	"main": "./dist/lottie-player.common.js",
