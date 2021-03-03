@@ -43,7 +43,7 @@ export default {
 					}
 				});
 			}
-			this.player.load(this.src);
+			this.player.load(JSON.stringify(this.src));
 			try {
 				this.$refs.LottiePlayer.appendChild(this.player);
 			} catch (ex) {
